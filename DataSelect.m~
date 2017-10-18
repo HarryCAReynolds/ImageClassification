@@ -20,8 +20,8 @@ for i=1:N
     end
 end
 TestData = F(Vtest, :); %Pick out the testdata from F=image data set
-GTest = G(Vtest); %index of image in G test = index of image in TestData; entry in Gtest is the classification of the image
+GTest = G(Vtest,:); %index of image in G test = index of image in TestData; entry in Gtest is the classification of the image
 TrainingData = F(Vtrain, :);% Pick out the training data from F= image data set 
-GTrain = G(Vtrain);%index of image in GTrain = index fo image in TrainingData; entry in GTrain is the classification of the image
+GTrain = G(Vtrain,:);%index of image in GTrain = index fo image in TrainingData; entry in GTrain is the classification of the image
 end
 

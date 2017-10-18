@@ -8,8 +8,6 @@ permutation = flipud(permutation);
 D = D(permutation, permutation); 
 V = V(:, permutation);
 Vsub = V(:, range(1):range(2));
-size(Vsub)
-size(TrainingData)
 TrainCoord = TrainingData*Vsub;
 end
 
